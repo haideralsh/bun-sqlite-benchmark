@@ -16,7 +16,7 @@ function setup({ reset = false }: { reset?: boolean } = {}) {
   // Create table
   db.prepare(`
     CREATE TABLE IF NOT EXISTS users (
-        id TEXT PRIMARY KEY NOT NULL,
+        id BLOB PRIMARY KEY NOT NULL,
         created_at TEXT NOT NULL,
         username TEXT NOT NULL
     );
